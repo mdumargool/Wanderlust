@@ -93,7 +93,7 @@ app.use((req,res,next)=>{
 
 //ejs
 app.engine("ejs",ejsMate);
-
+app.use("/",listingRouter);
 //listings
 app.use("/listings",listingRouter);
 //Reviews
